@@ -303,6 +303,10 @@ button,
   ===================================*/
 @media all and (max-width: 500px) {
 
+  ul {
+    padding-left: 0;
+  }
+  
   .page-header {
     flex-direction: column;
     padding: 0;
