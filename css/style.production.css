@@ -397,7 +397,7 @@ Below is styling for animation for sun to change from yellow to red
 
 @keyframes color-change {
   0% {
-   fill: #edc655; /* 0% can also be "from". Starting point. */
+   fill: #edc655; /* 0% can also be "from". Starting point.
  }
  50% {
    fill: #fcffad; /* percentage adds more felxiblility */
