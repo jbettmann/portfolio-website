@@ -331,7 +331,10 @@ button,
   text-align: center;
 }
 
-/* reduces grid for screen sizes upto 500px*/
+
+/* ===================================
+       Screen sizes up to 500px
+  ===================================*/
 @media all and (max-width: 500px) {
 
   .page-header {
