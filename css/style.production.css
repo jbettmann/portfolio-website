@@ -99,6 +99,7 @@ button,
   text-decoration: none;
   /*adds spacing to the button (this will be duscussed later)*/
   padding: 10px;
+  margin: 10px 0;
   border-radius: 5px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
