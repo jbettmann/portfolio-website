@@ -434,9 +434,8 @@ Below is styling for animation for sun to change from yellow to red
 }
 
 .cloud-back {
-  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-          animation: 34s cloud-move-reverse infinite alternate linear;
-}
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}  */
 
 .experience-table {
   float: none;
