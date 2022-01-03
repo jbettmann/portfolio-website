@@ -374,7 +374,10 @@ button,
   }
 
 }
-/* shared rules for above @medias */
+
+/* ===================================
+     Shared rules for above @medias
+====================================== */
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
