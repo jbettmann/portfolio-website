@@ -226,7 +226,7 @@ button,
 .about {
   max-width: 700px; /* max size of 700px */
   margin: 20px auto; /* centers box in middle of page */
-  text-align: center; /* centers text */
+  text-align: left; /* left align text */
 }
 
  /* about page portrait */
