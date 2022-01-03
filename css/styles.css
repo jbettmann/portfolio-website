@@ -14,7 +14,7 @@
 
  :root {
    --primary-color: #3A2050;
-   --secondary-color: #fff;
+   --secondary-color: #2F4E48;
    --light-purple: #d4c2e7;
    --light-gray: #d6d6d6;
    --black: #000;
@@ -135,6 +135,7 @@ button,
   width: 100%;
   padding: 20px;
   border-bottom: 3px solid lightgray;
+
 }
 /* logo {jb} */
 .logo {
@@ -306,7 +307,7 @@ button,
   ul {
     padding-left: 0;
   }
-  
+
   .page-header {
     flex-direction: column;
     padding: 0;
