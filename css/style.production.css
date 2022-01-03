@@ -413,8 +413,7 @@ Below is styling for animation for sun to change from yellow to red
 
 @keyframes cloud-move {
   from {
-    -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(200px, 50px);
