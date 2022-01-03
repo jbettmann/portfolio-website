@@ -391,18 +391,6 @@ button,
   }
 }
 
-/* animation for sun to change from yellow to red */
-@-webkit-keyframes color-change {
-  0% {
-   fill: #edc655; /* 0% can also be "from". Starting point. */
- }
- 50% {
-   fill: #fcffad; /* percentage adds more felxiblility */
- }
- 100% {
-   fill: #f76414; /* 100% can also be "to". Stoping point */
- }
-}
 @keyframes color-change {
   0% {
    fill: #edc655; /* 0% can also be "from". Starting point. */
