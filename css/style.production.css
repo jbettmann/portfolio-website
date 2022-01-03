@@ -82,6 +82,10 @@ a:active {
   color: var(--teal); /* teal */
 }
 
+span {
+  font-style: italic;
+}
+
 button,
 .button,
 .form-group input[type="submit"] {
