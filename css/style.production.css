@@ -403,7 +403,7 @@ Below is styling for animation for sun to change from yellow to red
    fill: #fcffad; /* percentage adds more felxiblility
  }
  100% {
-   fill: #f76414; /* 100% can also be "to". Stoping point */
+   fill: #f76414; /* 100% can also be "to". Stoping point
  }
 }
 
