@@ -421,19 +421,7 @@ Below is styling for animation for sun to change from yellow to red
 }
 
 .cloud-front {
-  -webkit-animation: 30s cloud-move infinite alternate linear;
-          animation: 30s cloud-move infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move-reverse {
-  from {
-    -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
-  }
-  to {
-    -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
-  }
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 @keyframes cloud-move-reverse {
