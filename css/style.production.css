@@ -358,7 +358,7 @@ button,
     grid-template-columns: 1fr; /* sets grid to 1 column */
   }
 
-  .page-header__item--logo {
+  .logo {
     max-width: 130px;
 }
 
