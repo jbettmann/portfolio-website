@@ -248,6 +248,7 @@ button,
       -ms-flex-direction: column;
           flex-direction: column; /* moves logos below string "Find me on" */
   text-align: center; /* centers all text and inline or inline-block elements */
+  margin: 20px 0;
 }
 
 /* start grid fallback */
