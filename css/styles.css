@@ -306,6 +306,7 @@ button,
   .page-header {
     flex-direction: column;
     padding: 0;
+    align-items: center;
 
   }
   .page-header__item {
@@ -319,7 +320,8 @@ button,
   }
 
   .logo {
-    margin: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
     max-width: 100px;
 }
 
