@@ -6,7 +6,12 @@
  #d1d1d1; Gray82
  #22BDC4; teal
  #3A2050; Dark-sky purple
+
+ --Not Used--
+ #1A1D1C: Carcol black
+ #5BEDDA: Teal for Carcol
   */
+
  :root {
    --primary-color: #3A2050;
    --secondary-color: #fff;
@@ -69,6 +74,10 @@ a:active {
   color: var(--teal); /* teal */
 }
 
+span {
+  font-style: italic;
+}
+
 button,
 .button,
 .form-group input[type="submit"] {
@@ -82,6 +91,7 @@ button,
   text-decoration: none;
   /*adds spacing to the button (this will be duscussed later)*/
   padding: 10px;
+  margin: 10px 0;
   border-radius: 5px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -130,7 +140,7 @@ button,
 .logo {
   align-items: center;
   width: 100%;
-  max-width: 150px;
+  max-width: 120px;
   object-fit: contain;
 }
 
@@ -193,7 +203,7 @@ button,
 .about {
   max-width: 700px; /* max size of 700px */
   margin: 20px auto; /* centers box in middle of page */
-  text-align: center; /* centers text */
+  text-align: left; /* left align text */
 }
 
  /* about page portrait */
@@ -210,6 +220,7 @@ button,
   display: flex;
   flex-direction: column; /* moves logos below string "Find me on" */
   text-align: center; /* centers all text and inline or inline-block elements */
+  margin: 20px 0;
 }
 
 /* start grid fallback */
@@ -284,34 +295,10 @@ button,
   text-align: center;
 }
 
-/* Header container
-.page-header {
-  display: flex;
-  width: 100%;
-  padding: 20px;
-  border-bottom: 3px solid lightgray;
-}
-/* logo {jb}
-.logo {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 150px;
-  object-fit: contain;
-}
 
-/* navigation and logo top
-.page-header__item {
-  flex: 0 1 200px; /* sets sizes for logo and nav list
-}
-
-/* target is last item in navigation list
-.page-header__item:last-child {
-  flex-grow: 1; /* allows to take up rest of space available
-  text-align: right; /* makes right aligned */
-
-
-/* reduces grid for screen sizes upto 500px*/
+/* ===================================
+       Screen sizes up to 500px
+  ===================================*/
 @media all and (max-width: 500px) {
 
   .page-header {
@@ -333,17 +320,21 @@ button,
     max-width: 130px;
 }
 
-
 }
 
-/* reduces grid for screen sizes between 500px and 750px */
+/* ====================================================
+      Screen sizes between 500px and 750px
+======================================================*/
 @media all and (min-width: 500px) and (max-width: 750px){
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 
 }
-/* shared rules for above @medias */
+
+/* ===================================
+     Shared rules for above @medias
+====================================== */
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
@@ -357,16 +348,19 @@ button,
   }
 }
 
-/* animation for sun to change from yellow to red */
+/* =================================================================
+Below is styling for animation for sun to change from yellow to red
+====================================================================
+
 @keyframes color-change {
   0% {
-   fill: #edc655; /* 0% can also be "from". Starting point. */
+   fill: #edc655; /* 0% can also be "from". Starting point.
  }
  50% {
-   fill: #fcffad; /* percentage adds more felxiblility */
+   fill: #fcffad; /* percentage adds more felxiblility
  }
  100% {
-   fill: #f76414; /* 100% can also be "to". Stoping point */
+   fill: #f76414; /* 100% can also be "to". Stoping point
  }
 }
 
@@ -398,7 +392,7 @@ button,
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
-}
+}  */
 
 .experience-table {
   float: none;
