@@ -364,7 +364,9 @@ button,
 
 }
 
-/* reduces grid for screen sizes between 500px and 750px */
+/* ====================================================
+      Screen sizes between 500px and 750px
+======================================================*/
 @media all and (min-width: 500px) and (max-width: 750px){
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
