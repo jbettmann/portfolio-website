@@ -316,7 +316,7 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: var(--primary-color); /* dark purple */
+  background-color: var(--primary-color); /* light forest green */
   color: var(--black);
   border-radius: 40px;
   -webkit-box-shadow: 1px 3px 12px 1px var(--secondary-color-2);
