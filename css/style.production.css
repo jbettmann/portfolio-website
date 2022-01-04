@@ -283,8 +283,8 @@ button,
 }
 
 .grid__item {
-  background-color: var(--primary-color); /* Dark-sky purple */
-  color: var(--secondary-color);
+  background-color: var(--secondary-color); /* Dark-sky purple */
+  color: var(--black);
   padding: 20px;
   width: auto;
   min-height: auto;
@@ -293,7 +293,7 @@ button,
 
 /* Work page links to getHub */
 .grid__item a:visited {
-  color: var(--secondary-color); /* Changed visted links to white for accesablity */
+  color: var(--black); /* Changed visted links to white for accesablity */
 }
 
 /* Targeting grid item to expand across mulitpule cells (grid area) */
