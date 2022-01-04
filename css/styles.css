@@ -109,7 +109,7 @@ button,
 }
 
 .form-group input[type="submit"] {
-  background-color: var(--light-gray);
+  background-color: var(--secondary-color);
   color: var(--black);
   border-bottom: none;
   box-shadow: 1px 2px 5px 1px var(--black);
@@ -252,8 +252,8 @@ button,
 }
 
 .grid__item {
-  background-color: var(--primary-color); /* Dark-sky purple */
-  color: var(--secondary-color);
+  background-color: var(--secondary-color); /* Dark-sky purple */
+  color: var(--black);
   padding: 20px;
   width: auto;
   min-height: auto;
@@ -262,7 +262,7 @@ button,
 
 /* Work page links to getHub */
 .grid__item a:visited {
-  color: var(--secondary-color); /* Changed visted links to white for accesablity */
+  color: var(--black); /* Changed visted links to white for accesablity */
 }
 
 /* Targeting grid item to expand across mulitpule cells (grid area) */
@@ -280,10 +280,10 @@ button,
   padding: 30px;
   margin: 50px 0;
   justify-content: center;
-  background-color: var(--primary-color); /* dark purple */
-  color: var(--secondary-color);
+  background-color: var(--secondary-color-2); /* light forest green */
+  color: var(--black);
   border-radius: 40px;
-  box-shadow: 1px 3px 12px 1px var(--black);
+  box-shadow: 1px 3px 12px 1px var(--secondary-color-2);
 }
 
 
