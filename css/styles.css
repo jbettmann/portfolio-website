@@ -20,9 +20,10 @@
   */
 
  :root {
-   --primary-color: #889A8C;   /* light forest green */
+   --primary-color: #234442;   /* light forest green */
    --secondary-color: #C0919C;  /* light pink */
    --secondary-color-2: #0F2117; /* dark green */
+   --logo-pink: #A77374;         /* dark pink */
    --main-background-color: #fff; /* white */
    --light-purple: #d4c2e7;
    --light-gray: #d6d6d6;
@@ -181,6 +182,7 @@ button,
 }
 .navigation-list__item {
   text-decoration: none; /* removes underline from nav list names */
+  color: var(--main-background-color); /* makes nav items white */
 }
 
 .navigation-list__item:hover,
@@ -253,7 +255,7 @@ button,
 
 .grid__item {
   background-color: var(--secondary-color); /* Dark-sky purple */
-  color: var(--black);
+  color: var(--main-background-color);
   padding: 20px;
   width: auto;
   min-height: auto;
@@ -262,7 +264,7 @@ button,
 
 /* Work page links to getHub */
 .grid__item a:visited {
-  color: var(--black); /* Changed visted links to white for accesablity */
+  color: var(--main-background-color); /* Changed visted links to white for accesablity */
 }
 
 /* Targeting grid item to expand across mulitpule cells (grid area) */
@@ -281,7 +283,7 @@ button,
   margin: 50px 0;
   justify-content: center;
   background-color: var(--primary-color); /* light forest green */
-  color: var(--black);
+  color: var(--main-background-color);
   border-radius: 40px;
   box-shadow: 1px 3px 12px 1px var(--secondary-color-2); /* dark green */
 }
