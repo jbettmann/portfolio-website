@@ -20,8 +20,10 @@
   */
 
  :root {
-   --primary-color: #3A2050;
-   --secondary-color: #2F4E48;
+   --primary-color: #889A8C;   /* light forest green */
+   --secondary-color: #C0919C;  /* light pink */
+   --secondary-color-2: #0F2117; /* dark green */
+   --main-background-color: #fff; /* white */
    --light-purple: #d4c2e7;
    --light-gray: #d6d6d6;
    --black: #000;
@@ -131,7 +133,7 @@ button:focus,
 button,
 .button:visited,
 .form-group input[type="submit"]:visited {
-  color: var(--secondary-color); /* Changed visted links to white for accesablity */
+  color: var(--black); /* Changed visted links to white for accesablity */
 }
 
 /* Header container */
