@@ -317,10 +317,10 @@ button,
       -ms-flex-pack: center;
           justify-content: center;
   background-color: var(--primary-color); /* dark purple */
-  color: var(--secondary-color);
+  color: var(--black);
   border-radius: 40px;
-  -webkit-box-shadow: 1px 3px 12px 1px var(--black);
-          box-shadow: 1px 3px 12px 1px var(--black);
+  -webkit-box-shadow: 1px 3px 12px 1px var(--secondary-color-2);
+          box-shadow: 1px 3px 12px 1px var(--secondary-color-2);
 }
 
 
