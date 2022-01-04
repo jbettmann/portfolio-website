@@ -14,14 +14,23 @@
  #22BDC4; teal
  #3A2050; Dark-sky purple
 
+------------------------------------
+ New Color palate
+ #889A8C; light forest green
+ #C0919C; light pink
+ #253B31; dark green
+-------------------------------------
+
  --Not Used--
  #1A1D1C: Carcol black
  #5BEDDA: Teal for Carcol
   */
 
  :root {
-   --primary-color: #3A2050;
-   --secondary-color: #fff;
+   --primary-color: #889A8C;   /* light forest green */
+   --secondary-color: #C0919C;  /* light pink */
+   --secondary-color-2: #0F2117; /* dark green */
+   --main-background-color: #fff; /* white */
    --light-purple: #d4c2e7;
    --light-gray: #d6d6d6;
    --black: #000;
@@ -40,7 +49,7 @@
 }
 
 body {
-  background-color: var(--secondary-color);
+  background-color: var(--main-background-color);
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: var(--font-size);
@@ -94,8 +103,8 @@ button,
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color and text decoration (unerline, etc.) of the button */
-  background-color: var(--primary-color); /* Dark-sky purple */
-  color: var(--secondary-color); /* white */
+  background-color: var(--secondary-color); /* Dark-sky purple */
+  color: var(--secondary-color-2); /* white */
   text-decoration: none;
   /*adds spacing to the button (this will be duscussed later)*/
   padding: 10px;
@@ -134,7 +143,7 @@ button:focus,
 button,
 .button:visited,
 .form-group input[type="submit"]:visited {
-  color: var(--secondary-color); /* Changed visted links to white for accesablity */
+  color: var(--black); /* Changed visted links to white for accesablity */
 }
 
 /* Header container */
@@ -150,7 +159,10 @@ button,
           align-items: center;
   width: 100%;
   padding: 20px;
-  border-bottom: 3px solid lightgray;
+  -webkit-box-shadow: 1px 2px 6px 1px var(--secondary-color-2);
+          box-shadow: 1px 2px 6px 1px var(--secondary-color-2);
+  background-color: var(--primary-color);
+
 }
 /* logo {jb} */
 .logo {
@@ -160,7 +172,7 @@ button,
   margin-top: 10px;
   margin-left: 10px;
   width: 100%;
-  max-width: 110px;
+  max-width: 120px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -339,12 +351,19 @@ button,
   ===================================*/
 @media all and (max-width: 500px) {
 
+  ul {
+    padding-left: 0;
+  }
+
   .page-header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
   }
   .page-header__item {
@@ -362,7 +381,8 @@ button,
 
   .logo {
     margin-top: 20px;
-    max-width: 90px;
+    margin-bottom: 5px;
+    max-width: 100px;
 }
 
 }
