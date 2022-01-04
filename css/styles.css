@@ -95,8 +95,8 @@ button,
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color and text decoration (unerline, etc.) of the button */
-  background-color: var(--primary-color); /* Dark-sky purple */
-  color: var(--secondary-color); /* white */
+  background-color: var(--secondary-color); /* Dark-sky purple */
+  color: var(--secondary-color-2); /* white */
   text-decoration: none;
   /*adds spacing to the button (this will be duscussed later)*/
   padding: 10px;
