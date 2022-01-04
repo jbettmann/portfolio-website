@@ -118,8 +118,8 @@ button,
 }
 
 .form-group input[type="submit"] {
-  background-color: var(--light-gray);
-  color: var(--black);
+  background-color: var(--secondary-color);
+  color: var(--secondary-color-2);
   border-bottom: none;
   -webkit-box-shadow: 1px 2px 5px 1px var(--black);
           box-shadow: 1px 2px 5px 1px var(--black);
