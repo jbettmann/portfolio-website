@@ -27,10 +27,11 @@
   */
 
  :root {
-   --primary-color: #234442;   /* light forest green */
+   --primary-color: #234442;   /* dark paint green */
    --secondary-color: #C0919C;  /* light pink */
    --secondary-color-2: #0F2117; /* dark green */
    --logo-pink: #A77374;         /* dark pink */
+   --logo-yellow: #D8BC73;      /* mustard yellow */
    --main-background-color: #fff; /* white */
    --light-purple: #d4c2e7;
    --light-gray: #d6d6d6;
@@ -89,7 +90,7 @@ a:hover, a:focus {
 
 a:active {
   /* selceted link */
-  color: var(--teal); /* teal */
+  color: var(--logo-yellow); /* yellow */
 }
 
 span {
@@ -105,7 +106,7 @@ button,
   font-family: inherit;
   /* styles the background color, font color and text decoration (unerline, etc.) of the button */
   background-color: var(--secondary-color); /* light pink */
-  color: var(--secondary-color-2); /* dark green */
+  color: var(--black); /* black */
   text-decoration: none;
   /*adds spacing to the button (this will be duscussed later)*/
   padding: 10px;
@@ -115,16 +116,11 @@ button,
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
   transition: 0.2s opacity;
-  margin-top: 10px;
 }
 
 .form-group input[type="submit"] {
-  background-color: var(--secondary-color);
-  color: var(--black);
-  border-bottom: none;
   -webkit-box-shadow: 1px 2px 5px 1px var(--black);
           box-shadow: 1px 2px 5px 1px var(--black);
-
 }
 
 button:hover,
@@ -140,12 +136,6 @@ button:focus,
   text-decoration: none;
 }
 
-/* button link color */
-button,
-.button:visited,
-.form-group input[type="submit"]:visited {
-  color: var(--black); /* Changed visted links to white for accesablity */
-}
 
 /* Header container */
 .page-header {
@@ -270,7 +260,12 @@ button,
 /* start grid fallback */
 .grid__item {
  display: inline-block;
- width: 33%;
+ background-color: var(--secondary-color); /* pink */
+ color: var(--black);
+ padding: 20px;
+ width: auto;
+ min-height: auto;
+ margin: 0;
 }
 /* end grid fallback */
 
@@ -284,14 +279,6 @@ button,
   margin: 10px;
 }
 
-.grid__item {
-  background-color: var(--secondary-color); /* Dark-sky purple */
-  color: var(--main-background-color);
-  padding: 20px;
-  width: auto;
-  min-height: auto;
-  margin: 0;
-}
 
 /* Work page links to getHub */
 .grid__item a:visited {
@@ -362,7 +349,6 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
