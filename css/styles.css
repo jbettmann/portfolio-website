@@ -107,15 +107,10 @@ button,
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
-  margin-top: 10px;
 }
 
 .form-group input[type="submit"] {
-  background-color: var(--secondary-color);
-  color: var(--black);
-  border-bottom: none;
   box-shadow: 1px 2px 5px 1px var(--black);
-
 }
 
 button:hover,
@@ -131,12 +126,6 @@ button:focus,
   text-decoration: none;
 }
 
-/* button link color */
-button,
-.button:visited,
-.form-group input[type="submit"]:visited {
-  color: var(--black); /* Changed visted links to white for accesablity */
-}
 
 /* Header container */
 .page-header {
@@ -242,7 +231,12 @@ button,
 /* start grid fallback */
 .grid__item {
  display: inline-block;
- width: 33%;
+ background-color: var(--secondary-color); /* pink */
+ color: var(--black);
+ padding: 20px;
+ width: auto;
+ min-height: auto;
+ margin: 0;
 }
 /* end grid fallback */
 
@@ -254,14 +248,6 @@ button,
   margin: 10px;
 }
 
-.grid__item {
-  background-color: var(--secondary-color); /* Dark-sky purple */
-  color: var(--main-background-color);
-  padding: 20px;
-  width: auto;
-  min-height: auto;
-  margin: 0;
-}
 
 /* Work page links to getHub */
 .grid__item a:visited {
@@ -323,7 +309,6 @@ button,
 
   .page-header {
     flex-direction: column;
-    padding: 0;
     align-items: center;
 
   }
