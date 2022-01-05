@@ -20,10 +20,11 @@
   */
 
  :root {
-   --primary-color: #234442;   /* light forest green */
+   --primary-color: #234442;   /* dark paint green */
    --secondary-color: #C0919C;  /* light pink */
    --secondary-color-2: #0F2117; /* dark green */
    --logo-pink: #A77374;         /* dark pink */
+   --logo-yellow: #D8BC73;      /* mustard yellow */
    --main-background-color: #fff; /* white */
    --light-purple: #d4c2e7;
    --light-gray: #d6d6d6;
@@ -81,7 +82,7 @@ a:hover, a:focus {
 
 a:active {
   /* selceted link */
-  color: var(--teal); /* teal */
+  color: var(--logo-yellow); /* yellow */
 }
 
 span {
@@ -97,7 +98,7 @@ button,
   font-family: inherit;
   /* styles the background color, font color and text decoration (unerline, etc.) of the button */
   background-color: var(--secondary-color); /* light pink */
-  color: var(--secondary-color-2); /* dark green */
+  color: var(--black); /* black */
   text-decoration: none;
   /*adds spacing to the button (this will be duscussed later)*/
   padding: 10px;
