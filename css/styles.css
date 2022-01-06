@@ -216,17 +216,22 @@ button:focus,
 }
  /* about page container */
 .about {
-  max-width: 700px; /* max size of 700px */
+  max-width: 1000px; /* max size of 700px */
   margin: 20px auto; /* centers box in middle of page */
-  text-align: left; /* left align text */
+  text-align: center;
+
+}
+/* <p> in about container */
+.about p {
+  text-align: left;
 }
 
  /* about page portrait */
 .about__portrait {
-  float: none; /* floats image in middle of page*/
-  width: 400px;
+  float: right; /* floats image to right of page*/
+  width: 100%;
+  max-width: 400px;
   height: auto;
-  margin-right: 40px; /* space between image and text */
 }
 
 /* footer on all */
@@ -327,6 +332,32 @@ button:focus,
     margin: 10px auto;
   }
 
+  .profile__portrait {
+    float: none;
+    margin: 20px auto;
+    margin-bottom: 10px;
+  }
+
+  .profile {
+    text-align: center;
+  }
+
+  .homepage-button {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* about page container */
+ .about {
+   max-width: 700px; /* max size of 700px */
+   margin: 20px auto; /* centers box in middle of page */
+   text-align: center;
+
+ }
+  /* <p> in about container */
+ .about p {
+   text-align: left;
+}
 
   .grid {
     grid-template-columns: 1fr; /* sets grid to 1 column */
@@ -362,7 +393,7 @@ button:focus,
     grid-row: auto / auto;
   }
   h1 {
-    font-size: 22px;
+    font-size: 25px;
   }
 }
 
