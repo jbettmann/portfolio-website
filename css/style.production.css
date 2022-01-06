@@ -38,11 +38,15 @@
    --black: #000;
    --teal: #22BDC4;
 
-   --font-size: 16px;
-   --header: 30px;
-   --secondary-header: 24px;
+   --body-font: "Lato";
+   --header-font: "PT sans";
+   --body-font-size: 16px;
+   --header-font-size: 30px;
+   --secondary-header-font-size: 20px;
+   --nav-font-size: 18px;
 
-   --primary-font-weight: 300;
+   --body-font-weight: 300;
+   --header-font-weight: 700;
  }
 
 * {
@@ -52,9 +56,9 @@
 
 body {
   background-color: var(--main-background-color);
-  font-family: 'Lato', sans-serif;
+  font-family: var(--body-font), sans-serif;
   font-weight: 300;
-  font-size: var(--font-size);
+  font-size: var(--body-font-size);
   /*Sets the font size to 16pz */
   line-height: 1.6;
   /*Sets the line-height to 1.6 */
@@ -65,15 +69,17 @@ body {
 }
 
 h1 {
-  font-size: var(--header);
-  font-weight: var(--primary-font-weight);
-  font-variant: small-caps;
+  font-family: var(--header-font);
+  font-size: var(--header-font-size);
+  font-weight: var(--header-font-weight);
+  font-variant: normal;
 }
 
 h2 {
-  font-size: var(--secondary-header);
-  font-weight: var(--primary-font-weight);
-  font-variant: small-caps;
+  font-family: var(--header-font);
+  font-size: var(--secondary-header-font-size);
+  font-weight: var(--header-font-weight);
+  font-variant: normal;
 }
 
 
@@ -103,7 +109,7 @@ button,
   /*overwrites browser defaults and resets the broder */
   border: none;
   /* takes the font from the outer container */
-  font-family: inherit;
+  font-family: var(--body-font);
   /* styles the background color, font color and text decoration (unerline, etc.) of the button */
   background-color: var(--secondary-color); /* light pink */
   color: var(--black); /* black */
@@ -161,7 +167,7 @@ button:focus,
       -ms-flex-align: center;
           align-items: center;
   margin-top: 10px;
-  margin-left: 30px;
+  margin-left: 20px;
   width: 100%;
   max-width: 90px;
   -o-object-fit: contain;
@@ -188,6 +194,9 @@ button:focus,
   list-style-type: none; /* removes bullet points */
   text-decoration: none;
   margin-right: 20px;
+  font-weight: var(--header-font-weight);
+  font-family: var(--header-font);
+  font-size: var(--nav-font-size);
 }
 
 /* targets each navigation iteam */
