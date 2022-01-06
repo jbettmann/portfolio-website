@@ -371,6 +371,20 @@ button:focus,
     margin: 10px auto;
   }
 
+  .profile__portrait {
+    float: none;
+    margin: 20px auto;
+    margin-bottom: 10px;
+  }
+
+  .profile {
+    text-align: center;
+  }
+
+  .homepage-button {
+    text-align: center;
+    margin-top: 10px;
+  }
 
   .grid {
     -ms-grid-columns: 1fr;
@@ -408,7 +422,7 @@ button:focus,
     grid-row: auto / auto;
   }
   h1 {
-    font-size: 22px;
+    font-size: 25px;
   }
 }
 
