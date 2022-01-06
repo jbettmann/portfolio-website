@@ -244,13 +244,6 @@ button:focus,
  text-align: left;
 }
 
- /* about page portrait */
-.about__portrait {
-  float: right; /* floats image to right of page*/
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
 
 /* footer on all */
 .page-footer {
