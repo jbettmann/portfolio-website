@@ -144,7 +144,7 @@ button:focus,
   margin-top: 10px;
   margin-left: 10px;
   width: 100%;
-  max-width: 100px;
+  max-width: 90px;
   object-fit: contain;
 }
 
