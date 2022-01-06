@@ -238,9 +238,10 @@ button:focus,
 #about__text {
   margin: 0 30px;
 }
+
 /* <p> in about container */
 .about p {
-  text-align: left;
+ text-align: left;
 }
 
  /* about page portrait */
