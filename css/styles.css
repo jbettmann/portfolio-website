@@ -223,6 +223,18 @@ button:focus,
 
 }
 
+/* about page portrait */
+.about__portrait {
+ float: right;
+ width: 100%;
+ max-width: 600px;
+ height: auto;
+ margin-right: 30px;
+ margin-left: 30px;
+ margin-bottom: 8px;
+ justify-content: center;
+}
+
 }
 /* <p> in about container */
 .about p {
