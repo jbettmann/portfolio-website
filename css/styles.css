@@ -214,11 +214,14 @@ button:focus,
   margin-right: 40px; /* space between image and text */
   border-radius: 50%; /* rounds corners of image to make circle */
 }
- /* about page container */
+
+/* about page container */
 .about {
-  max-width: 1000px; /* max size of 700px */
-  margin: 20px auto; /* centers box in middle of page */
-  text-align: center;
+ max-width: 1200px;
+ margin: 0 auto;
+ text-align: center;
+
+}
 
 }
 /* <p> in about container */
