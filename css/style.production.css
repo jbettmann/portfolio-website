@@ -161,9 +161,9 @@ button:focus,
       -ms-flex-align: center;
           align-items: center;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 30px;
   width: 100%;
-  max-width: 100px;
+  max-width: 90px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -187,6 +187,7 @@ button:focus,
 .navigation-list {
   list-style-type: none; /* removes bullet points */
   text-decoration: none;
+  margin-right: 20px;
 }
 
 /* targets each navigation iteam */
