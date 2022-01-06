@@ -206,7 +206,6 @@ button:focus,
   text-align: left;
 }
 
-
 /* index page portrait */
 .profile__portrait {
   float: left; /* floats image left on page*/
@@ -214,6 +213,10 @@ button:focus,
   height: auto;
   margin-right: 40px; /* space between image and text */
   border-radius: 50%; /* rounds corners of image to make circle */
+}
+
+.profile__content {
+  margin-bottom: 20px; /* margin for button spacing */
 }
 
 /* about page container */

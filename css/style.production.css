@@ -239,6 +239,10 @@ button:focus,
   border-radius: 50%; /* rounds corners of image to make circle */
 }
 
+.profile__content {
+  margin-bottom: 20px; /* margin for button spacing */
+}
+
 /* about page container */
 .about {
  max-width: 1200px;
