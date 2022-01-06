@@ -31,11 +31,15 @@
    --black: #000;
    --teal: #22BDC4;
 
-   --font-size: 16px;
-   --header: 30px;
-   --secondary-header: 24px;
+   --body-font: "Lato";
+   --header-font: "PT sans";
+   --body-font-size: 16px;
+   --header-font-size: 30px;
+   --secondary-header-font-size: 20px;
+   --nav-font-size: 18px;
 
-   --primary-font-weight: 300;
+   --body-font-weight: 300;
+   --header-font-weight: 700;
  }
 
 * {
