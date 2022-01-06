@@ -238,20 +238,38 @@ button:focus,
   margin-right: 40px; /* space between image and text */
   border-radius: 50%; /* rounds corners of image to make circle */
 }
- /* about page container */
+
+/* about page container */
 .about {
-  max-width: 700px; /* max size of 700px */
-  margin: 20px auto; /* centers box in middle of page */
-  text-align: left; /* left align text */
+ max-width: 1200px;
+ margin: 0 auto;
+ text-align: center;
+
 }
 
- /* about page portrait */
+/* about page portrait */
 .about__portrait {
-  float: none; /* floats image in middle of page*/
-  width: 400px;
-  height: auto;
-  margin-right: 40px; /* space between image and text */
+ float: right;
+ width: 100%;
+ max-width: 600px;
+ height: auto;
+ margin-right: 30px;
+ margin-left: 30px;
+ margin-bottom: 8px;
+ -webkit-box-pack: center;
+     -ms-flex-pack: center;
+         justify-content: center;
 }
+
+#about__text {
+  margin: 0 30px;
+}
+
+/* <p> in about container */
+.about p {
+ text-align: left;
+}
+
 
 /* footer on all */
 .page-footer {
@@ -263,8 +281,12 @@ button:focus,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; /* moves logos below string "Find me on" */
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   text-align: center; /* centers all text and inline or inline-block elements */
   margin: 20px 0;
+
 }
 
 /* start grid fallback */
@@ -386,6 +408,24 @@ button:focus,
     margin-top: 10px;
   }
 
+  /* about page container */
+ .about {
+   display: block;
+   max-width: 700px; /* max size of 700px */
+   margin: 20px auto; /* centers box in middle of page */
+   text-align: center;
+ }
+
+ .about__portrait {
+   float: none;
+   margin: 0;
+   padding: 0 10px;
+ }
+  /* <p> in about container */
+ .about p {
+   text-align: center;
+}
+
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr; /* sets grid to 1 column */
@@ -402,18 +442,31 @@ button:focus,
 /* ====================================================
       Screen sizes between 500px and 750px
 ======================================================*/
-@media all and (min-width: 500px) and (max-width: 750px){
+@media all and (min-width: 500px) and (max-width: 770px){
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 
+  /* about page container */
+ .about {
+   display: block;
+   max-width: 700px; /* max size of 700px */
+   margin: 20px auto; /* centers box in middle of page */
+   text-align: center;
+ }
+ /* portrait on about page */
+ .about__portrait {
+   float: none;
+   margin: 0; /* resets margins from above */
+   padding: 0 10px;
+ }
 }
 
 /* ===================================
      Shared rules for above @medias
 ====================================== */
-@media all and (max-width: 750px) {
+@media all and (max-width: 770px) {
   .grid {
     grid-gap: 10px;
   }
