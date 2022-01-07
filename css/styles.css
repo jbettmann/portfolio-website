@@ -437,17 +437,17 @@ button:focus,
 
 /* =================================================================
 Below is styling for animation for sun to change from yellow to red
-====================================================================
+==================================================================== */
 
 @keyframes color-change {
   0% {
-   fill: #edc655; /* 0% can also be "from". Starting point.
+   fill: #edc655; /* 0% can also be "from". Starting point. */
  }
  50% {
-   fill: #fcffad; /* percentage adds more felxiblility
+   fill: #fcffad; /* percentage adds more felxiblility */
  }
  100% {
-   fill: #f76414; /* 100% can also be "to". Stoping point
+   fill: #f76414; /* 100% can also be "to". Stoping point */
  }
 }
 
@@ -479,7 +479,7 @@ Below is styling for animation for sun to change from yellow to red
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
-}  */
+}
 
 .experience-table {
   float: none;
