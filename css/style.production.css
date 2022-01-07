@@ -337,7 +337,7 @@ button:focus,
 
 /* Contact form layout */
 .contact-form {
-  max-width: 1200px;
+  max-width: 1000px;
   padding: 30px;
   margin: 50px 0;
   -webkit-box-pack: center;
@@ -487,49 +487,90 @@ button:focus,
 
 /* =================================================================
 Below is styling for animation for sun to change from yellow to red
-====================================================================
+==================================================================== */
+
+@-webkit-keyframes color-change {
+  0% {
+   fill: #edc655; /* 0% can also be "from". Starting point. */
+ }
+ 50% {
+   fill: #fcffad; /* percentage adds more felxiblility */
+ }
+ 100% {
+   fill: #f76414; /* 100% can also be "to". Stoping point */
+ }
+}
 
 @keyframes color-change {
   0% {
-   fill: #edc655; /* 0% can also be "from". Starting point.
+   fill: #edc655; /* 0% can also be "from". Starting point. */
  }
  50% {
-   fill: #fcffad; /* percentage adds more felxiblility
+   fill: #fcffad; /* percentage adds more felxiblility */
  }
  100% {
-   fill: #f76414; /* 100% can also be "to". Stoping point
+   fill: #f76414; /* 100% can also be "to". Stoping point */
  }
 }
 
 .sun{
-  animation: 4s color-change infinite alternate linear;
+  -webkit-animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
 }
 
 @keyframes cloud-move {
   from {
-    transform: translate(0, 50px);
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
   to {
-    transform: translate(200px, 50px);
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
   }
 }
 
 .cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+  -webkit-animation: 30s cloud-move infinite alternate linear;
+          animation: 30s cloud-move infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
+  }
 }
 
 @keyframes cloud-move-reverse {
   from {
-    transform: translate(446px, 48px);
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
   }
   to {
-    transform: translate(100px, 48px);
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
   }
 }
 
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}  */
+  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+          animation: 34s cloud-move-reverse infinite alternate linear;
+}
 
 .experience-table {
   float: none;
