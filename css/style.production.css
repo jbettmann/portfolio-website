@@ -69,14 +69,14 @@ body {
 }
 
 h1 {
-  font-family: var(--header-font);
+  font-family: var(--header-font), sans-serif;
   font-size: var(--header-font-size);
   font-weight: var(--header-font-weight);
   font-variant: normal;
 }
 
 h2 {
-  font-family: var(--header-font);
+  font-family: var(--header-font), sans-serif;
   font-size: var(--secondary-header-font-size);
   font-weight: var(--header-font-weight);
   font-variant: normal;
@@ -109,7 +109,7 @@ button,
   /*overwrites browser defaults and resets the broder */
   border: none;
   /* takes the font from the outer container */
-  font-family: var(--body-font);
+  font-family: var(--body-font), sans-serif;
   /* styles the background color, font color and text decoration (unerline, etc.) of the button */
   background-color: var(--secondary-color); /* light pink */
   color: var(--black); /* black */
@@ -195,7 +195,7 @@ button:focus,
   text-decoration: none;
   margin-right: 20px;
   font-weight: var(--header-font-weight);
-  font-family: var(--header-font);
+  font-family: var(--header-font), sans-serif;
   font-size: var(--nav-font-size);
 }
 
