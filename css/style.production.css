@@ -65,6 +65,7 @@ body {
 }
 .container {
   width: 80%;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -255,7 +256,7 @@ button:focus,
 .about__portrait {
  float: right;
  width: 100%;
- max-width: 600px;
+ max-width: 525px;
  height: auto;
  margin-right: 30px;
  margin-left: 30px;
@@ -336,6 +337,7 @@ button:focus,
 
 /* Contact form layout */
 .contact-form {
+  max-width: 1200px;
   padding: 30px;
   margin: 50px 0;
   -webkit-box-pack: center;
@@ -415,7 +417,7 @@ button:focus,
   /* about page container */
  .about {
    display: block;
-   max-width: 700px; /* max size of 700px */
+   width: 90%;
    margin: 20px auto; /* centers box in middle of page */
    text-align: center;
  }
@@ -455,7 +457,7 @@ button:focus,
   /* about page container */
  .about {
    display: block;
-   max-width: 700px; /* max size of 700px */
+   width: 90%;
    margin: 20px auto; /* centers box in middle of page */
    text-align: center;
  }
