@@ -58,13 +58,23 @@ body {
   background-color: var(--main-background-color);
   font-family: var(--body-font), sans-serif;
   font-weight: 300;
-  font-size: var(--body-font-size);
-  /*Sets the font size to 16pz */
-  line-height: 1.6;
-  /*Sets the line-height to 1.6 */
+  font-size: var(--body-font-size); /*Sets the font size to 16pz */
+  line-height: 1.6; /*Sets the line-height to 1.6 */
+  height: 100vh; /* gives body a height equivalent to viewport size */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* allows container footer to have margin:auto and be at bottom of page */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; /* makes container a column */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; /* centers everything horizontaly */
 }
+
 .container {
-  width: 80%;
+  width: 90vw;
   max-width: 1000px;
   margin: auto;
 }
@@ -82,7 +92,6 @@ h2 {
   font-weight: var(--header-font-weight);
   font-variant: normal;
 }
-
 
 a {
   color: var(--black);
@@ -143,7 +152,6 @@ button:focus,
   text-decoration: none;
 }
 
-
 /* Header container */
 .page-header {
   display: -webkit-box;
@@ -162,6 +170,7 @@ button:focus,
   background-color: var(--primary-color);
 
 }
+
 /* logo {jb} */
 .logo {
   -webkit-box-align: center;
@@ -221,14 +230,17 @@ button:focus,
 
 /* Work page h1 */
 .work-header {
+  width: 100vw;
   text-align: center;
 }
 
 /* home page profile container layout */
 .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 700px; /* max size of 700px */
-  margin: 0 auto; /* centers box in middle of page */
-  text-align: left;
+  margin: 40px; /* margin for bottom spacing and all around */
 }
 
 /* index page portrait */
@@ -240,30 +252,29 @@ button:focus,
   border-radius: 50%; /* rounds corners of image to make circle */
 }
 
-.profile__content {
-  margin-bottom: 20px; /* margin for button spacing */
+.homepage-button {
+  margin-top: 30px;
 }
 
 /* about page container */
 .about {
- max-width: 1200px;
- margin: 0 auto;
- text-align: center;
-
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* about page portrait */
 .about__portrait {
- float: right;
- width: 100%;
- max-width: 525px;
- height: auto;
- margin-right: 30px;
- margin-left: 30px;
- margin-bottom: 8px;
- -webkit-box-pack: center;
-     -ms-flex-pack: center;
-         justify-content: center;
+  float: right;
+  width: 100%;
+  max-width: 525px;
+  height: auto;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #about__text {
@@ -272,9 +283,8 @@ button:focus,
 
 /* <p> in about container */
 .about p {
- text-align: left;
+  text-align: left;
 }
-
 
 /* footer on all */
 .page-footer {
@@ -290,19 +300,18 @@ button:focus,
       -ms-flex-pack: end;
           justify-content: flex-end;
   text-align: center; /* centers all text and inline or inline-block elements */
-  margin: 20px 0;
-
+  margin-top: auto;
 }
 
 /* start grid fallback */
 .grid__item {
- display: inline-block;
- background-color: var(--secondary-color); /* pink */
- color: var(--black);
- padding: 20px;
- width: auto;
- min-height: auto;
- margin: 0;
+  display: inline-block;
+  background-color: var(--secondary-color); /* pink */
+  color: var(--black);
+  padding: 20px;
+  width: auto;
+  min-height: auto;
+  margin: 0;
 }
 /* end grid fallback */
 
@@ -315,7 +324,6 @@ button:focus,
   grid-gap: 20px;
   margin: 10px;
 }
-
 
 /* Work page links to getHub */
 .grid__item a:visited {
@@ -349,7 +357,6 @@ button:focus,
   -webkit-box-shadow: 1px 3px 12px 1px var(--secondary-color-2);
           box-shadow: 1px 3px 12px 1px var(--secondary-color-2); /* dark green */
 }
-
 
 .form-group {
   padding: 10px;
