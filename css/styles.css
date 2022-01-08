@@ -50,10 +50,8 @@ body {
   background-color: var(--main-background-color);
   font-family: var(--body-font), sans-serif;
   font-weight: 300;
-  font-size: var(--body-font-size);
-  /*Sets the font size to 16pz */
-  line-height: 1.6;
-  /*Sets the line-height to 1.6 */
+  font-size: var(--body-font-size); /*Sets the font size to 16pz */
+  line-height: 1.6; /*Sets the line-height to 1.6 */
   height: 100vh; /* gives body a height equivalent to viewport size */
   display: flex; /* allows container footer to have margin:auto and be at bottom of page */
   flex-direction: column; /* makes container a column */
