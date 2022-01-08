@@ -54,7 +54,12 @@ body {
   /*Sets the font size to 16pz */
   line-height: 1.6;
   /*Sets the line-height to 1.6 */
+  height: 100vh; /* gives body a height equivalent to viewport size */
+  display: flex; /* allows container footer to have margin:auto and be at bottom of page */
+  flex-direction: column; /* makes container a column */
+  align-items: center; /* centers everything horizontaly */
 }
+
 .container {
   width: 80%;
   max-width: 1000px;
