@@ -205,9 +205,9 @@ button:focus,
 
 /* home page profile container layout */
 .profile {
+  display: flex;
   max-width: 700px; /* max size of 700px */
-  margin: 0 auto; /* centers box in middle of page */
-  text-align: left;
+  margin: 40px; /* margin for bottom spacing and all around */
 }
 
 /* index page portrait */
