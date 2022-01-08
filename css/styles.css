@@ -258,8 +258,7 @@ button:focus,
   flex-direction: column; /* moves logos below string "Find me on" */
   justify-content: flex-end;
   text-align: center; /* centers all text and inline or inline-block elements */
-  margin: 20px 0;
-
+  margin-top: auto;
 }
 
 /* start grid fallback */
