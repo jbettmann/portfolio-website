@@ -219,8 +219,8 @@ button:focus,
   border-radius: 50%; /* rounds corners of image to make circle */
 }
 
-.profile__content {
-  margin-bottom: 20px; /* margin for button spacing */
+.homepage-button {
+  margin-top: 30px;
 }
 
 /* about page container */
