@@ -199,6 +199,7 @@ button:focus,
 
 /* Work page h1 */
 .work-header {
+  width: 100vw;
   text-align: center;
 }
 
