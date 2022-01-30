@@ -46,9 +46,10 @@ let formValidation = (function() {
     let value = nameInput.value;
     // verifies a name has been entered
     if (!value) {
-      showErrorMessage(nameInput,'Your name is required');
+      showErrorMessage(nameInput,'Your name is required.');
       return false;
     }
+
     showErrorMessage(nameInput, null);
     return true;
   }
@@ -58,7 +59,7 @@ let formValidation = (function() {
     let value = messageInput.value;
     // verifies a message has been entered
     if (!value) {
-      showErrorMessage(messageInput,'A message is required');
+      showErrorMessage(messageInput,'A message is required.');
       return false;
     }
     showErrorMessage(messageInput, null);
