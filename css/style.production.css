@@ -5,6 +5,7 @@
 * Browsers: last 2 version
 */
 
+
 /*
  Colors Used:
  #6e4a8f; purple
@@ -384,6 +385,11 @@ textarea {
 
 .form-group__submit {
   text-align: center;
+}
+
+.error-message {
+  color: var(--logo-yellow);
+  font-size: 0.8em;
 }
 
 /* ===================================
