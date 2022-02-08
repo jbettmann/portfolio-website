@@ -5,9 +5,7 @@
 * Browsers: last 2 version
 */
 
-
-
- /*
+/*
  Colors Used:
  #6e4a8f; purple
  #d1d1d1; Gray82
@@ -26,51 +24,49 @@
  #5BEDDA: Teal for Carcol
   */
 
- :root {
-   --primary-color: #234442;   /* dark paint green */
-   --secondary-color: #C0919C;  /* light pink */
-   --secondary-color-2: #0F2117; /* dark green */
-   --logo-pink: #A77374;         /* dark pink */
-   --logo-yellow: #D8BC73;      /* mustard yellow */
-   --main-background-color: #fff; /* white */
-   --light-purple: #d4c2e7;
-   --light-gray: #d6d6d6;
-   --black: #000;
-   --teal: #22BDC4;
-
-   --body-font: "Lato";
-   --header-font: "PT sans";
-   --body-font-size: 16px;
-   --header-font-size: 30px;
-   --secondary-header-font-size: 20px;
-   --nav-font-size: 18px;
-
-   --body-font-weight: 400;
-   --header-font-weight: 700;
- }
+:root {
+  --primary-color: #234442;   /* dark paint green */
+  --secondary-color: #c0919c;  /* light pink */
+  --secondary-color-2: #0f2117; /* dark green */
+  --logo-pink: #a77374;         /* dark pink */
+  --logo-yellow: #d8bc73;      /* mustard yellow */
+  --main-background-color: #fff; /* white */
+  --light-purple: #d4c2e7;
+  --light-gray: #d6d6d6;
+  --black: #000;
+  --teal: #22bdc4;
+  --body-font: "Lato";
+  --header-font: "PT sans";
+  --body-font-size: 16px;
+  --header-font-size: 30px;
+  --secondary-header-font-size: 20px;
+  --nav-font-size: 18px;
+  --body-font-weight: 400;
+  --header-font-weight: 700;
+}
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* Makes all elements fit on screen */
+  box-sizing: border-box; /* Makes all elements fit on screen */
 }
 
 body {
   background-color: var(--main-background-color);
   font-family: var(--body-font), sans-serif;
   font-weight: 300;
-  font-size: var(--body-font-size); /*Sets the font size to 16pz */
-  line-height: 1.6; /*Sets the line-height to 1.6 */
+  font-size: var(--body-font-size); /* Sets the font size to 16pz */
+  line-height: 1.6; /* Sets the line-height to 1.6 */
   height: 100vh; /* gives body a height equivalent to viewport size */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; /* allows container footer to have margin:auto and be at bottom of page */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; /* makes container a column */
+  -ms-flex-direction: column;
+  flex-direction: column; /* makes container a column */
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; /* centers everything horizontaly */
+  -ms-flex-align: center;
+  align-items: center; /* centers everything horizontaly */
 }
 
 .container {
@@ -98,11 +94,11 @@ a {
   text-decoration: underline;
 }
 
-a:hover, a:focus {
-  /*Overlining when hovering over a link */
+a:hover,
+a:focus {
+  /* Overlining when hovering over a link */
   text-decoration: none;
 }
-
 
 a:active {
   /* selceted link */
@@ -116,18 +112,22 @@ span {
 button,
 .button,
 .form-group input[type="submit"] {
-  /*overwrites browser defaults and resets the broder */
+  /* overwrites browser defaults and resets the broder */
   border: none;
+
   /* takes the font from the outer container */
   font-family: var(--body-font), sans-serif;
+
   /* styles the background color, font color and text decoration (unerline, etc.) of the button */
   background-color: var(--secondary-color); /* light pink */
   color: var(--black); /* black */
   text-decoration: none;
-  /*adds spacing to the button (this will be duscussed later)*/
+
+  /* adds spacing to the button (this will be duscussed later) */
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
+
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
@@ -136,7 +136,7 @@ button,
 
 .form-group input[type="submit"] {
   -webkit-box-shadow: 1px 2px 5px 1px var(--black);
-          box-shadow: 1px 2px 5px 1px var(--black);
+  box-shadow: 1px 2px 5px 1px var(--black);
 }
 
 button:hover,
@@ -144,10 +144,11 @@ button:focus,
 .button:hover,
 .button:focus,
 .form-group input[type="submit"]:hover,
-.form-group input[type="submit"]:focus  {
-  /*lets the mouse appear as a hand when hovering over the button */
+.form-group input[type="submit"]:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-  /*reduces the opacity of the button to 70% */
+
+  /* reduces the opacity of the button to 70% */
   opacity: 0.7;
   text-decoration: none;
 }
@@ -158,44 +159,43 @@ button:focus,
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   padding: 20px;
   -webkit-box-shadow: 1px 2px 6px 1px var(--secondary-color-2);
-          box-shadow: 1px 2px 6px 1px var(--secondary-color-2);
+  box-shadow: 1px 2px 6px 1px var(--secondary-color-2);
   background-color: var(--primary-color);
-
 }
 
 /* logo {jb} */
 .logo {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 10px;
   margin-left: 20px;
   width: 100%;
   max-width: 90px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 /* navigation and logo top */
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px; /* sets sizes for logo and nav list */
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px; /* sets sizes for logo and nav list */
 }
 
 /* target is last item in navigation list */
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; /* allows to take up rest of space available */
+  -ms-flex-positive: 1;
+  flex-grow: 1; /* allows to take up rest of space available */
   text-align: right; /* makes right aligned */
 }
 
@@ -214,6 +214,7 @@ button:focus,
   display: inline-block; /* aligns nav list into row */
   margin-left: 15px; /* puts 15px margins(spaces) between list iteams */
 }
+
 .navigation-list__item {
   text-decoration: none; /* removes underline from nav list names */
   color: var(--main-background-color); /* makes nav items white */
@@ -225,7 +226,7 @@ button:focus,
 }
 
 .navigation-list__item--active {
-  text-decoration: overline; /* Overlining name the page its on*/
+  text-decoration: overline; /* Overlining name the page its on */
 }
 
 /* Work page h1 */
@@ -245,7 +246,7 @@ button:focus,
 
 /* index page portrait */
 .profile__portrait {
-  float: left; /* floats image left on page*/
+  float: left; /* floats image left on page */
   width: 250px;
   height: auto;
   margin-right: 40px; /* space between image and text */
@@ -273,8 +274,8 @@ button:focus,
   margin-left: 30px;
   margin-bottom: 8px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #about__text {
@@ -294,11 +295,11 @@ button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; /* moves logos below string "Find me on" */
+  -ms-flex-direction: column;
+  flex-direction: column; /* moves logos below string "Find me on" */
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   text-align: center; /* centers all text and inline or inline-block elements */
   margin-top: auto;
 }
@@ -313,11 +314,13 @@ button:focus,
   min-height: auto;
   margin: 0;
 }
+
 /* end grid fallback */
 
 .grid {
   display: -ms-grid;
   display: grid;
+
   /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -349,13 +352,13 @@ button:focus,
   padding: 30px;
   margin: 50px 0;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: var(--primary-color); /* light forest green */
   color: var(--main-background-color);
   border-radius: 40px;
   -webkit-box-shadow: 1px 3px 12px 1px var(--secondary-color-2);
-          box-shadow: 1px 3px 12px 1px var(--secondary-color-2); /* dark green */
+  box-shadow: 1px 3px 12px 1px var(--secondary-color-2); /* dark green */
 }
 
 .form-group {
@@ -366,7 +369,10 @@ button:focus,
   display: block;
 }
 
-.form-group input[type="text"], input[type="email"], input[type='tel'], textarea {
+.form-group input[type="text"],
+input[type="email"],
+input[type='tel'],
+textarea {
   width: 100%;
   padding: 10px;
   border-radius: 10px;
@@ -375,16 +381,15 @@ button:focus,
 .form-group textarea {
   max-width: 100%;
 }
+
 .form-group__submit {
   text-align: center;
 }
 
-
 /* ===================================
        Screen sizes up to 500px
-  ===================================*/
+  =================================== */
 @media all and (max-width: 500px) {
-
   ul {
     padding-left: 0;
   }
@@ -392,17 +397,17 @@ button:focus,
   .page-header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-
+    -ms-flex-align: center;
+    align-items: center;
   }
+
   .page-header__item {
     -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
     margin: 10px auto;
   }
 
@@ -422,22 +427,23 @@ button:focus,
   }
 
   /* about page container */
- .about {
-   display: block;
-   width: 90%;
-   margin: 20px auto; /* centers box in middle of page */
-   text-align: center;
- }
+  .about {
+    display: block;
+    width: 90%;
+    margin: 20px auto; /* centers box in middle of page */
+    text-align: center;
+  }
 
- .about__portrait {
-   float: none;
-   margin: 0;
-   padding: 0 10px;
- }
+  .about__portrait {
+    float: none;
+    margin: 0;
+    padding: 0 10px;
+  }
+
   /* <p> in about container */
- .about p {
-   text-align: center;
-}
+  .about p {
+    text-align: center;
+  }
 
   .grid {
     -ms-grid-columns: 1fr;
@@ -448,32 +454,32 @@ button:focus,
     margin-top: 20px;
     margin-bottom: 5px;
     max-width: 90px;
-}
-
+  }
 }
 
 /* ====================================================
       Screen sizes between 500px and 750px
-======================================================*/
-@media all and (min-width: 500px) and (max-width: 770px){
+====================================================== */
+@media all and (min-width: 500px) and (max-width: 770px) {
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 
   /* about page container */
- .about {
-   display: block;
-   width: 90%;
-   margin: 20px auto; /* centers box in middle of page */
-   text-align: center;
- }
- /* portrait on about page */
- .about__portrait {
-   float: none;
-   margin: 0; /* resets margins from above */
-   padding: 0 10px;
- }
+  .about {
+    display: block;
+    width: 90%;
+    margin: 20px auto; /* centers box in middle of page */
+    text-align: center;
+  }
+
+  /* portrait on about page */
+  .about__portrait {
+    float: none;
+    margin: 0; /* resets margins from above */
+    padding: 0 10px;
+  }
 }
 
 /* ===================================
@@ -483,10 +489,12 @@ button:focus,
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 25px;
   }
@@ -498,85 +506,93 @@ Below is styling for animation for sun to change from yellow to red
 
 @-webkit-keyframes color-change {
   0% {
-   fill: #edc655; /* 0% can also be "from". Starting point. */
- }
- 50% {
-   fill: #fcffad; /* percentage adds more felxiblility */
- }
- 100% {
-   fill: #f76414; /* 100% can also be "to". Stoping point */
- }
+    fill: #edc655; /* 0% can also be "from". Starting point. */
+  }
+
+  50% {
+    fill: #fcffad; /* percentage adds more felxiblility */
+  }
+
+  100% {
+    fill: #f76414; /* 100% can also be "to". Stoping point */
+  }
 }
 
 @keyframes color-change {
   0% {
-   fill: #edc655; /* 0% can also be "from". Starting point. */
- }
- 50% {
-   fill: #fcffad; /* percentage adds more felxiblility */
- }
- 100% {
-   fill: #f76414; /* 100% can also be "to". Stoping point */
- }
+    fill: #edc655; /* 0% can also be "from". Starting point. */
+  }
+
+  50% {
+    fill: #fcffad; /* percentage adds more felxiblility */
+  }
+
+  100% {
+    fill: #f76414; /* 100% can also be "to". Stoping point */
+  }
 }
 
-.sun{
+.sun {
   -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 .cloud-front {
   -webkit-animation: 30s cloud-move infinite alternate linear;
-          animation: 30s cloud-move infinite alternate linear;
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-          animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 .experience-table {
