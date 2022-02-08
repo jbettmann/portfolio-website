@@ -386,6 +386,11 @@ textarea {
   text-align: center;
 }
 
+.error-message {
+  color: var(--logo-yellow);
+  font-size: 0.8em;
+}
+
 /* ===================================
        Screen sizes up to 500px
   =================================== */
