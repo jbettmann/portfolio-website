@@ -341,11 +341,15 @@
     grid-column: 3 / 3; /* child should be in 3rd column . Long hand: grid-column-start: 3; grid-column-end: 1; */
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
-    grid-row: 1 / 3; /* child should start in first row end at beginning of thrid row. Long hand: grid-row-start: 1; grid-row-end: 3; */
+    /* grid-row: 1 / 3; child should start in first row end at beginning of thrid row. Long hand: grid-row-start: 1; grid-row-end: 3; */
   }
   
   .work_img > img {
     width: 100%;
+  }
+
+  .chat-app_height {
+    width: 32%;
   }
   
   .work_links {
