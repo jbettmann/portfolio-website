@@ -1,120 +1,287 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1" />
+    <title>Jordan Bettmann's Work</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=PT+Sans:wght@700&family=Raleway:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Titillium+Web:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=divice-width, initial-scale=1">
-  <title>Jordan Bettmann's Work</title>
-  <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=PT+Sans:wght@700&family=Raleway:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Titillium+Web:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
-</head>
+  <body>
+    <header class="page-header">
+      <!-- Add Logo here -->
+      <div class="logo page-header__item">
+        <a href="index.html"
+          ><img
+            src="img/logo/logo.svg"
+            alt="Jordan Bettmann's logo display as {J|B}"
+        /></a>
+      </div>
 
-<body>
-  <header class="page-header">
-    <!-- Add Logo here -->
-    <div class="logo page-header__item">
-      <a href="index.html"><img src="img/logo/logo.svg" alt="Jordan Bettmann's logo display as {J|B}"></a>
-    </div>
+      <!-- Start of Navigation bar -->
+      <nav class="page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Work</a
+            >
+          </li>
 
-    <!-- Start of Navigation bar -->
-    <nav class="page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<!-- Main content -->
-  <section>
-    <div class="work-header">
-      <h1>Work</h1>
-    </div>
+    <!-- Main content -->
+    <section>
+      <div class="work-header">
+        <h1>Work</h1>
+      </div>
       <div class="grid">
-
-        <!-- Project 1 --> <!-- Grid items will live here -->
+        <!-- Project 1 -->
+        <!-- Grid items will live here -->
         <div class="grid__item">
-          <h2>Title Of Project 1</h2>
+          <h2>PokeDex</h2>
+          <div class="work_img">
+            <img
+              src="img/pokedex.png"
+              alt="screenshot of PokeDex app homepage"
+            />
+          </div>
           <p>
-            Here, I will describe this project briefly
+            This PokeDex is a small web application build with HTML, CSS, and
+            JavaScript that loads data from an external API. Users are able to
+            search for their favorite pokemon and view details via a modal built
+            with Bootstrap.
           </p>
-          <a href="#" class="grid__link">See project on GitHub</a>
+          <div class="work_links">
+            <a
+              href="https://github.com/jbettmann/pokedex-app"
+              target="_blank"
+              class="grid__link"
+              >See project on GitHub</a
+            >
+            <a
+              href="https://jbettmann.github.io/pokedex-app"
+              class="grid__link"
+              target="_blank"
+              >PokeDex Live</a
+            >
+          </div>
         </div>
 
         <!-- Project 2 -->
         <div class="grid__item">
-          <h2>Title Of Project 2</h2>
+          <h2>myFlix API</h2>
+          <div class="work_img">
+            <img
+              src="img/myFlix_database.png"
+              alt="Screenshot of myFlix-api/database being tested in Postman"
+            />
+          </div>
           <p>
-            Here, I will describe this project briefly
+            This REST API is the server side component to the myFlix App.
+            Node.js, MongoDB and Express of the MERN stack were used to build
+            this API and database. This project demonstrate web server
+            framework, business logic, basic HTTP and JWT (token-based)
+            authentication and data security.
           </p>
-          <a href="#" class="grid__link">See project on GitHub</a>
+          <div class="work_links">
+            <a
+              href="https://github.com/jbettmann/myFlix-app"
+              class="grid__link"
+              target="_blank"
+              >See project on GitHub</a
+            >
+          </div>
         </div>
 
         <!-- Project 3 -->
         <div class="grid__item">
-          <h2>Meet App</h2>
+          <h2>myFlix App (React)</h2>
           <div class="work_img">
-            <img src="img/meet.png" alt="Meet app homepage">
+            <img
+              src="img/myFlix_React.png"
+              alt="screenshot of myFlix React homepage"
+            />
           </div>
           <p>
-            This serverless, PWA project was built with React using a test-driven development technique.  
-            An OOP approach was taken when implementing error alerts for users.  
-            This application uses the Google Calendar API to fetch events along with Rechart to display data visualizations. 
+            This is the client-side single-page myFlix application built with
+            React. Is displays responsive and rich UI components implemented
+            with react-bootstrap. Users can search and access information about
+            different movies, their descriptions, directors, actors and genres.
+            The application makes all its call to the myFlix RESTful API.
           </p>
           <div class="work_links">
-            <a href="https://github.com/jbettmann/meet" class="grid__link" target="_blank">See project on GitHub</a>
-            <a href="https://jbettmann.github.io/meet/" class="grid__link" target="_blank">See Meet in action</a>
+            <a
+              href="https://github.com/jbettmann/myFlix-clent"
+              class="grid__link"
+              target="_blank"
+              >See project on GitHub</a
+            >
+            <a
+              href="https://bettsmyflix.netlify.app/login"
+              class="grid__link"
+              target="_blank"
+              >myFlix React App Live</a
+            >
           </div>
-          
         </div>
 
         <!-- Project 4 -->
         <div class="grid__item">
-          <h2>Title Of Project 4</h2>
+          <h2>Meet App</h2>
+          <div class="work_img">
+            <img src="img/meet.png" alt="screenshot of Meet app homepage" />
+          </div>
           <p>
-            Here, I will describe this project briefly
+            This serverless, PWA project was built with React using a
+            test-driven development technique. An OOP approach was taken when
+            implementing error alerts for users. This application uses the
+            Google Calendar API to fetch events along with Rechart to display
+            data visualizations.
           </p>
-          <a href="#" class="grid__link">See project on GitHub</a>
+          <div class="work_links">
+            <a
+              href="https://github.com/jbettmann/meet"
+              class="grid__link"
+              target="_blank"
+              >See project on GitHub</a
+            >
+            <a
+              href="https://jbettmann.github.io/meet/"
+              class="grid__link"
+              target="_blank"
+              >Meet App Live</a
+            >
+          </div>
         </div>
 
         <!-- Project 5 -->
         <div class="grid__item">
-          <h2>Title Of Project 5</h2>
+          <h2>Chat App</h2>
+          <div>
+            <img
+              src="img/chat-app/chat-home.PNG"
+              alt="screenshot of chat app homepage"
+              class="chat-app_height"
+            />
+            <img
+              src="img/chat-app/chat-room.PNG"
+              alt="screenshot of chat app chatroom page"
+              class="chat-app_height"
+            />
+            <img
+              src="img/chat-app/chat-choice.jpeg"
+              alt="screenshot of chat app send option page"
+              class="chat-app_height"
+            />
+          </div>
           <p>
-            Here, I will describe this project briefly
+            This is a mobile chat app built with React Native. The app uses the
+            Gifted Chat library to provide a familiar chat interface along with
+            options to share images and their location.
           </p>
-          <a href="#" class="grid__link">See project on GitHub</a>
+          <div class="work_links">
+            <a
+              href="https://github.com/jbettmann/chat-app"
+              class="grid__link"
+              target="_blank"
+              >See project on GitHub</a
+            >
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="grid__item">
+          <h2>myFlix App (Angular)</h2>
+          <div class="work_img">
+            <img
+              src="img/myFlix_Angular.png"
+              alt="myFlix-Angular-client app homepage"
+            />
+          </div>
+          <p>
+            Using the myFlix REST API build in a previous project, this client
+            side version of the myFlix App was build with Angular. The entire UI
+            of the app was designed with Angular Material. Documentation for the
+            project was generated with TypeDoc
+          </p>
+          <div class="work_links">
+            <a
+              href="https://github.com/jbettmann/myFlix-Angular-client"
+              class="grid__link"
+              target="_blank"
+              >See project on GitHub</a
+            >
+            <a
+              href="https://jbettmann.github.io/myFlix-Angular-client/welcome"
+              class="grid__link"
+              target="_blank"
+              >myFlix Angular Live</a
+            >
+          </div>
         </div>
       </div>
+    </section>
 
-  </section>
+    <!-- Footer with links to social media profiles -->
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://github.com/jbettmann" target="_blank"
+          ><img src="img/social_icons/github.svg" alt="github Logo"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/jordan-bettmann-268a39228/"
+          target="_blank"
+          ><img src="img/social_icons/linkedin.svg" alt="linkedin logo"
+        /></a>
+      </div>
+    </footer>
 
-
-  <!-- Footer with links to social media profiles -->
-  <footer class="page-footer">
-    <p>Find me on</p>
-    <div class="social-media">
-      <a href="https://github.com/jbettmann" target="_blank"><img src="img/social_icons/github.svg" alt="github Logo"></a>
-      <a href="https://www.linkedin.com/in/jordan-bettmann-268a39228/" target="_blank"><img src="img/social_icons/linkedin.svg" alt="linkedin logo"></a>
-    </div>
-  </footer>
-
-<script src="js/tota11y.min.js"></script>
-<script src="js/script.js"></script>
-
-</body>
-
+    <script src="js/tota11y.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
