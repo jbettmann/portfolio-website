@@ -1,101 +1,149 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1" />
+    <title>Contact Jordan Bettmann</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=PT+Sans:wght@700&family=Raleway:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Titillium+Web:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=divice-width, initial-scale=1">
-  <title>Contact Jordan Bettmann</title>
-  <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=PT+Sans:wght@700&family=Raleway:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Titillium+Web:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
-</head>
+  <body>
+    <header class="page-header">
+      <!-- Add Logo here -->
+      <div class="logo page-header__item">
+        <a href="index.html"
+          ><img
+            src="img/logo/logo.svg"
+            alt="Jordan Bettmann's logo display as {J|B}"
+        /></a>
+      </div>
 
-<body>
+      <!-- Start of Navigation bar -->
+      <nav class="page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
 
-  <header class="page-header">
-    <!-- Add Logo here -->
-    <div class="logo page-header__item">
-      <a href="index.html"><img src="img/logo/logo.svg" alt="Jordan Bettmann's logo display as {J|B}"></a>
-    </div>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- Start of Navigation bar -->
-    <nav class="page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Main Content -->
+    <main>
+      <div class="contact-info">
+        <h1>Contact</h1>
+        <p>
+          Jordan Bettmann
+          <br />
+          <!--Sends Email-->
+          <a href="mailto:jordan.bettmann@gmail.com"
+            >jordan.bettmann@gmail.com</a
+          >
+        </p>
+        <div class="contact-icons">
+          <!--Email-->
+          <a href="mailto:jordan.bettmann@gmail.com" class="social-icons">
+            <img src="img/social_icons/email_icon.svg" alt="email" />
+          </a>
+          <!--GitHub-->
+          <a
+            href="https://github.com/jbettmann"
+            target="_blank"
+            class="social-icons"
+          >
+            <img src="img/social_icons/github.svg" alt="github " />
+          </a>
+          <!--LinkedIn-->
+          <a
+            href="https://www.linkedin.com/in/jordan-bettmann-268a39228/"
+            target="_blank"
+            class="social-icons"
+          >
+            <img src="img/social_icons/linkedin.svg" alt="linkedin " />
+          </a>
+        </div>
+      </div>
 
-  <!-- Main Content -->
-  <main>
-    <div class="contact-info">
-      <h1>Contact</h1>
-      <p>
-        Jordan Bettmann
-      <br>
-        Phone: <a href="tel:605.728.1202">605.728.1202</a><!--Calls Number-->
-      <br>
-        Email: <a href="mailto:jordan.bettmann@gmail.com">jordan.bettmann@gmail.com</a><!--Sends Email-->
-      </p>
-      <a href="mailto:jordan.bettmann@gmail.com">Contact Me</a><!--Sends Email-->
-    </div>
-
-    <!-- Contact Form -->
-    <div class="container">
+      <!--  <div class="container">
+      <!-- Contact Form
       <form action="submit" method="post" class="contact-form">
-        <!-- Contact Name -->
+        <!-- Contact Name
         <div class="form-group">
           <label class="standard-label" for="contact-name">Name:* </label>
           <input type="text" id="contact-name" required>
         </div>
-        <!-- Email -->
+        <!-- Email 
         <div class="form-group">
           <label class="standard-label" for="contact-email">E-mail:* </label>
           <input type="email" id="contact-email" required>
         </div>
-        <!-- Phone Number -->
+        <!-- Phone Number
         <div class="form-group">
           <label class="standard-label" for="contact-phone">Telephone: </label>
           <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
         </div>
-        <!-- Message area -->
+        <!-- Message area 
         <div class="form-group">
           <label class="standard-label" for="user-message">Message:* </label>
           <textarea maxlength="240" id="user-message" required></textarea>
         </div>
-        <!-- Submit Button -->
+        <!-- Submit Button 
         <div class="form-group form-group__submit">
           <input type="submit" value="Send Message">
         </div>
-      </form>
-    </div>
-  </main>
+      </form> 
+      </div> -->
+    </main>
 
-  <!-- Footer with links to social media profiles -->
-  <footer class="page-footer">
-    <p>Find me on</p>
-    <div class="social-media">
-      <a href="https://github.com/jbettmann" target="_blank"><img src="img/social_icons/github.svg" alt="github Logo"></a>
-      <a href="https://www.linkedin.com/in/jordan-bettmann-268a39228/" target="_blank"><img src="img/social_icons/linkedin.svg" alt="linkedin logo"></a>
-    </div>
-  </footer>
+    <!-- Footer with links to social media profiles -->
+    <footer class="page-footer"></footer>
 
-<script src="js/tota11y.min.js"></script>
-<script src="js/script.js"></script>
-
-</body>
-
+    <script src="js/tota11y.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

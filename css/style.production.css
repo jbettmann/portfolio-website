@@ -27,7 +27,7 @@
 
   :root {
     --primary-color: #234442;   /* dark paint green */
-    --secondary-color: #c0919c;  /* light pink */
+    --secondary-color: #e29ea9;  /* light pink */
     --secondary-color-2: #0f2117; /* dark green */
     --logo-pink: #a77374;         /* dark pink */
     --logo-yellow: #d8bc73;      /* mustard yellow */
@@ -68,6 +68,17 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; /* centers everything horizontaly */
+  }
+  
+  main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 10px;
   }
   
   .container {
@@ -261,8 +272,18 @@
   
   /* about page container */
   .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
   }
   
@@ -304,6 +325,7 @@
             justify-content: flex-end;
     text-align: center; /* centers all text and inline or inline-block elements */
     margin-top: auto;
+    margin-bottom: 2rem;
   }
   
   /* start grid fallback */
@@ -330,24 +352,17 @@
     margin: 10px;
   }
   
-  /* Work page links to getHub */
-  .grid__item a:visited {
-    color: var(--main-background-color); /* Changed visted links to white for accesablity */
-  }
-  
   /* Targeting grid item to expand across mulitpule cells (grid area) */
   .grid__item:last-child {
     -ms-grid-column: 3;
     grid-column: 3 / 3; /* child should be in 3rd column . Long hand: grid-column-start: 3; grid-column-end: 1; */
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    /* grid-row: 1 / 3; child should start in first row end at beginning of thrid row. Long hand: grid-row-start: 1; grid-row-end: 3; */
+     /* grid-row: 1 / 3; child should start in first row end at beginning of thrid row. Long hand: grid-row-start: 1; grid-row-end: 3; */
   }
   
   .work_img > img {
     width: 100%;
   }
-
+  
   .chat-app_height {
     width: 32%;
   }
@@ -360,24 +375,45 @@
         justify-content: space-around;
   }
   
-  .contact-info {
+  .contact-info {  
+    width: 500px;
+    padding: 30px;
+    margin: 50px 0;
     text-align: center;
+    color: var(--black);
+   
   }
   
-  /* Contact form layout */
+  .contact-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+    padding: 0 30px;
+  }
+  
+  .social-icons {
+    margin: 0 1rem;
+  
+  }
+  
+  /* Contact form layout 
   .contact-form {
     max-width: 1000px;
     padding: 30px;
     margin: 50px 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: var(--primary-color); /* light forest green */
+    justify-content: center;
+    background-color: var(--primary-color); /* light forest green 
     color: var(--main-background-color);
     border-radius: 40px;
-    -webkit-box-shadow: 1px 3px 12px 1px var(--secondary-color-2);
-            box-shadow: 1px 3px 12px 1px var(--secondary-color-2); /* dark green */
-  }
+    box-shadow: 1px 3px 12px 1px var(--secondary-color-2); /* dark green 
+  }*/
   
   .form-group {
     padding: 10px;
@@ -440,9 +476,6 @@
       margin-bottom: 10px;
     }
   
-    .profile {
-      text-align: center;
-    }
   
     .homepage-button {
       text-align: center;
@@ -504,6 +537,22 @@
       padding: 0 10px;
     }
   }
+  
+  /* ===================================
+         Screen sizes up to 604px
+    =================================== */
+    @media all and (max-width: 604px) {
+     .profile {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: center;
+     }
+    }  
   
   /* ===================================
        Shared rules for above @medias
@@ -621,6 +670,6 @@
   .experience-table {
     float: none;
     width: 100%;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
   }
