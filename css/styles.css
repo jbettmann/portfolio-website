@@ -20,7 +20,7 @@
 
 :root {
   --primary-color: #234442;   /* dark paint green */
-  --secondary-color: #c0919c;  /* light pink */
+  --secondary-color: #e29ea9;  /* light pink */
   --secondary-color-2: #0f2117; /* dark green */
   --logo-pink: #a77374;         /* dark pink */
   --logo-yellow: #d8bc73;      /* mustard yellow */
@@ -53,6 +53,13 @@ body {
   display: flex; /* allows container footer to have margin:auto and be at bottom of page */
   flex-direction: column; /* makes container a column */
   align-items: center; /* centers everything horizontaly */
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
 }
 
 .container {
@@ -227,8 +234,11 @@ button:focus,
 
 /* about page container */
 .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto;
   text-align: center;
 }
 
@@ -261,6 +271,7 @@ button:focus,
   justify-content: flex-end;
   text-align: center; /* centers all text and inline or inline-block elements */
   margin-top: auto;
+  margin-bottom: 2rem;
 }
 
 /* start grid fallback */
@@ -285,11 +296,6 @@ button:focus,
   margin: 10px;
 }
 
-/* Work page links to getHub */
-.grid__item a:visited {
-  color: var(--main-background-color); /* Changed visted links to white for accesablity */
-}
-
 /* Targeting grid item to expand across mulitpule cells (grid area) */
 .grid__item:last-child {
   grid-column: 3 / 3; /* child should be in 3rd column . Long hand: grid-column-start: 3; grid-column-end: 1; */
@@ -309,21 +315,39 @@ button:focus,
   justify-content: space-around;
 }
 
-.contact-info {
+.contact-info {  
+  width: 500px;
+  padding: 30px;
+  margin: 50px 0;
   text-align: center;
+  color: var(--black);
+ 
 }
 
-/* Contact form layout */
+.contact-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 30px;
+}
+
+.social-icons {
+  margin: 0 1rem;
+
+}
+
+/* Contact form layout 
 .contact-form {
   max-width: 1000px;
   padding: 30px;
   margin: 50px 0;
   justify-content: center;
-  background-color: var(--primary-color); /* light forest green */
+  background-color: var(--primary-color); /* light forest green 
   color: var(--main-background-color);
   border-radius: 40px;
-  box-shadow: 1px 3px 12px 1px var(--secondary-color-2); /* dark green */
-}
+  box-shadow: 1px 3px 12px 1px var(--secondary-color-2); /* dark green 
+}*/
 
 .form-group {
   padding: 10px;
@@ -379,9 +403,6 @@ textarea {
     margin-bottom: 10px;
   }
 
-  .profile {
-    text-align: center;
-  }
 
   .homepage-button {
     text-align: center;
@@ -441,6 +462,17 @@ textarea {
     padding: 0 10px;
   }
 }
+
+/* ===================================
+       Screen sizes up to 604px
+  =================================== */
+  @media all and (max-width: 604px) {
+   .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   }
+  }  
 
 /* ===================================
      Shared rules for above @medias
@@ -513,6 +545,6 @@ Below is styling for animation for sun to change from yellow to red
 .experience-table {
   float: none;
   width: 100%;
-  margin: 0 auto;
+  margin: 20px auto;
   text-align: center;
 }
