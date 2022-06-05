@@ -150,9 +150,9 @@ button:focus,
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 20px;
-  box-shadow: 1px 2px 6px 1px var(--secondary-color-2);
-  background-color: var(--primary-color);
+  padding: 10px 20px;
+  /* box-shadow: 1px 2px 6px 1px var(--secondary-color-2); */
+  
 }
 
 /* logo {jb} */
@@ -161,7 +161,7 @@ button:focus,
   margin-top: 10px;
   margin-left: 20px;
   width: 100%;
-  max-width: 90px;
+  max-width: 65px;
   object-fit: contain;
 }
 
@@ -194,7 +194,7 @@ button:focus,
 
 .navigation-list__item {
   text-decoration: none; /* removes underline from nav list names */
-  color: var(--main-background-color); /* makes nav items white */
+  
 }
 
 .navigation-list__item:hover,
@@ -380,6 +380,16 @@ textarea {
 }
 
 /* ===================================
+       Screen sizes up to 329px
+  =================================== */
+  @media all and (max-width: 329px) {
+    .navigation-list{
+    margin-right: 0;
+    font-size: 16px;}
+  }
+
+
+/* ===================================
        Screen sizes up to 500px
   =================================== */
 @media all and (max-width: 500px) {
@@ -435,7 +445,7 @@ textarea {
   .logo {
     margin-top: 20px;
     margin-bottom: 5px;
-    max-width: 90px;
+    max-width: 65px;
   }
 }
 
