@@ -246,6 +246,7 @@ button:focus,
   flex: 1 1 200px;
 }
 
+
 #skill__header {
   background-color: var(--secondary-color);
   text-align: right;
@@ -446,21 +447,28 @@ textarea {
 
   /* about page container */
   .about {
-    display: block;
+    flex-direction: column-reverse;
     width: 90%;
     margin: 20px auto; /* centers box in middle of page */
     text-align: center;
   }
 
+  /* portrait on about page */
   .about__portrait {
-    float: none;
-    margin: 0;
+    max-width: 300px;
     padding: 0 10px;
   }
 
-  /* <p> in about container */
-  .about p {
-    text-align: center;
+  #about-resume__button {
+    display: none;
+  }
+
+  #about-resume__sm-button {
+    display: contents;
+  }
+
+  .skills-container {
+    margin-top: 2rem;
   }
 
   .grid {
@@ -502,6 +510,10 @@ textarea {
 
   #about-resume__sm-button {
     display: contents;
+  }
+
+  .skills-container {
+    margin-top: 2rem;
   }
 }
 
