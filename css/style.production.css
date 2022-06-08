@@ -70,16 +70,6 @@
             align-items: center; /* centers everything horizontaly */
   }
   
-  main {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0 10px;
-  }
   
   .container {
     width: 90vw;
@@ -252,8 +242,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 700px; /* max size of 700px */
-    margin: 40px; /* margin for bottom spacing and all around */
+    margin: auto 0; /* centers profile div vertically with auto top-bottom */
   }
   
   /* index page portrait */
@@ -324,7 +313,7 @@
             justify-content: flex-end;
     text-align: center; /* centers all text and inline or inline-block elements */
     margin-top: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   
   /* start grid fallback */

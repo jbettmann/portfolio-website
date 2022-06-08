@@ -28,7 +28,7 @@
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Titillium+Web:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
 
   <body>
@@ -76,69 +76,91 @@
     <!-- Main content -->
     <main>
       <div class="about">
-        <div id="about__portrait">
-          <!-- Replace About photo below -->
-          <img
-            src="img/about_pic.jpg"
-            alt="side porfolio of Jordan outside in an urban city"
-            class="about__portrait"
-          />
-        </div>
         <div id="about__text">
-          <h1>Well Hello!</h1>
-
+          <h1>well hello!</h1>
           <p>
             <!-- elevator pick below -->
-            My name is Jordan and I'm a <span>web</span> developer from Denver,
-            Colorado. With a background in design and 7 years experience in malt
-            bevarage R&D, high attention to detail, organization and problem
-            solving are at my highest priority. I'm seeking to join a
-            collaborative team that builds intuitive and dynamic web
-            applications for an impactful cause.
+            I'm Jordan, a developer from Denver, Colorado with a background in
+            graphic design, business owner and 7 years experience in brewing and
+            brewery management. High attention to details, organization, problem
+            solving and troubleshooting are just some of the skill I've gained
+            in my previous roles.
+            <br />
+            <br />
+            My transition to development has been instinctive. With my love for
+            problem solving and learning, I strive to construct the best
+            possible product. I'm seeking to join a collaborative team that
+            builds intuitive and dynamic web applications for an impactful
+            cause.
           </p>
 
           <p>
             <!-- Things about me outside of work -->
+            <span>Side notes:</span><br />
             Big fan of baking and cooking, outdoor activities and the endless
-            search for the best fantasy series (Stephen King's
+            search for a great fantasy series (Stephen King's
             <span>The Dark Town Series </span>is the current winner).
           </p>
-          <div id="about__button">
+          <!-- only displayed on small screens 770px and smaller -->
+          <div id="about-resume__sm-button">
+            <!-- link to download resume -->
+            <a href="files/resume.pdf" class="button" target="_blank"
+              >Download My Resume</a
+            >
+          </div>
+          <div>
+            <h2 id="skill__header">languages/skills</h2>
+            <div class="skills">
+              <div class="skill__item">
+                <p>html</p>
+                <img src="img/skill_icons/html.svg" alt="html" />
+              </div>
+              <div class="skill__item">
+                <p>css</p>
+                <img src="img/skill_icons/css.svg" alt="css" />
+              </div>
+              <div class="skill__item">
+                <p>javascript</p>
+                <img src="img/skill_icons/javascript.svg" alt="javascript" />
+              </div>
+              <div class="skill__item">
+                <p>node.js</p>
+                <img src="img/skill_icons/node_js.svg" alt="node_js" />
+              </div>
+              <div class="skill__item">
+                <p>react</p>
+                <img src="img/skill_icons/react.svg" alt="react" />
+              </div>
+              <div class="skill__item">
+                <p>angular</p>
+                <img src="img/skill_icons/angular.svg" alt="angular" />
+              </div>
+              <div class="skill__item">
+                <p>bootstrap</p>
+                <img src="img/skill_icons/bootstrap.svg" alt="bootstrap" />
+              </div>
+              <div class="skill__item">
+                <p>material</p>
+                <img src="img/skill_icons/material.svg" alt="material design" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="photo-button-container">
+          <div>
+            <img
+              src="img/about_pic.jpg"
+              alt="side porfolio of Jordan outside in an urban city"
+              class="about__portrait"
+            />
+          </div>
+          <div id="about-resume__button">
             <!-- link to download resume -->
             <a href="files/resume.pdf" class="button" target="_blank"
               >Download My Resume</a
             >
           </div>
         </div>
-
-        <!-- ========= Table Example from Intro Front-end Coruse Below ======== -->
-
-        <table class="experience-table">
-          <thead>
-            <tr>
-              <th>Skills</th>
-              <th>Years of Experience</th>
-              <th>Level of Expertise</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Brewing</td>
-              <td>7</td>
-              <td>Advanced</td>
-            </tr>
-            <tr>
-              <td>Climbing</td>
-              <td>3</td>
-              <td>Intermediate</td>
-            </tr>
-            <tr>
-              <td>Web Develpoment</td>
-              <td>1</td>
-              <td>Beginner</td>
-            </tr>
-          </tbody>
-        </table>
       </div>
     </main>
 
