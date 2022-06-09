@@ -66,32 +66,45 @@
     </header>
 
     <!-- Main content -->
-    <main class="profile">
+    <main class="homepage">
       <!--portrait photo-->
       <!-- <img
         src="img/portfolio_pic.jpg"
         alt="A selfie of Jordan outside hiking"
-        class="profile__portrait"
+        class="homepage__portrait"
       /> -->
-      <div class="profile__content">
-        <h1>hello world!</h1>
-        <p>
-          My name is Jordan Bettmann.<br />
-          I'm a web developer from Denver, CO with a background <br />
-          in graphic design, brewing and brewing management.
-        </p>
-        <!-- Link to GetHub account -->
-        <a href="work.html" id="my-code-link">Check out some of my work</a>
-        <!-- Button Link to email -->
-        <div class="homepage-button">
-          <a href="mailto:jordan.bettmann@gmail.com" class="button"
-            >Let's Get In Touch</a
-          >
+      <div class="homepage__content">
+        <div>
+          <h1>hello world!</h1>
+          <p>
+            My name is Jordan Bettmann.<br />
+            I'm a web developer from Denver, CO with a background <br />
+            in graphic design, brewing and brewing management.
+          </p>
+        </div>
+        <div>
+          <h2>lets get started...</h2>
+          <div class="homepage-button__container">
+            <!-- directs use to about page -->
+            <div class="homepage-button">
+              <a href="about.html" class="button">About Me</a>
+            </div>
+            <!-- directs user to work page -->
+            <div class="homepage-button">
+              <a href="work.html" class="button middle">Check out my work</a>
+            </div>
+            <!-- sends email -->
+            <div class="homepage-button">
+              <a href="mailto:jordan.bettmann@gmail.com" class="button dark"
+                >Get In Touch</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
-    <!-- Footer with links to social media profiles -->
+    <!-- Footer with links to social media homepages -->
     <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
