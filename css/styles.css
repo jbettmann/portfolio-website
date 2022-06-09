@@ -283,7 +283,7 @@ button:focus,
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  margin: 0 0.8rem;
+  margin: 0.3rem 0.8rem;
 }
 
 .skill__item p {
