@@ -190,7 +190,7 @@ button:focus,
 }
 
 .navigation-list__item:hover,
-.havigation-list__item:focus {
+.navigation-list__item:focus {
   text-decoration: overline; /* applies overline to nav bar when hovered over */
 }
 
@@ -198,11 +198,7 @@ button:focus,
   text-decoration: overline; /* Overlining name the page its on */
 }
 
-/* Work page h1 */
-.work-header {
-  width: 100vw;
-  text-align: center;
-}
+
 
 /* home page profile container layout */
 .homepage {
@@ -309,16 +305,6 @@ button:focus,
   display: none;
 }
 
-/* footer on all */
-.page-footer {
-  clear: both; /* clears footer of float */
-  display: flex;
-  flex-direction: column; /* moves logos below string "Find me on" */
-  justify-content: flex-end;
-  text-align: center; /* centers all text and inline or inline-block elements */
-  margin-top: auto;
-  margin-bottom: 1rem;
-}
 
 /* start grid fallback */
 .grid__item {
@@ -330,6 +316,12 @@ button:focus,
 }
 
 /* end grid fallback */
+
+/* Work page h1 */
+.work-header {
+  width: 100vw;
+  text-align: center;
+}
 
 .grid {
   display: grid;
@@ -466,6 +458,18 @@ p {
 .social-icons {
   margin: 0 1rem;
 }
+
+/* footer on all */
+.page-footer {
+  clear: both; /* clears footer of float */
+  display: flex;
+  flex-direction: column; /* moves logos below string "Find me on" */
+  justify-content: flex-end;
+  text-align: center; /* centers all text and inline or inline-block elements */
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
 
 /* Contact form layout 
 .contact-form {
